@@ -3,6 +3,30 @@
 - 這些操作都只有在目前連線中有效，重新連線就會還原。
 - 作為 FDW 開發者的入門範例。
 
+## Sample
+```
+postgres=# select * from envfdw;
+        var         |             val
+--------------------+-----------------------------
+ PG_OOM_ADJUST_FILE | /proc/self/oom_score_adj
+ PG_GRANDPARENT_PID | 917
+ PGLOCALEDIR        | /usr/share/locale
+ PGSYSCONFDIR       | /etc/postgresql-common
+ LANG               | en_US.UTF-8
+ PWD                | /
+ PGDATA             | /var/lib/postgresql/11/main
+ LC_COLLATE         | en_US.UTF-8
+ LC_CTYPE           | en_US.UTF-8
+ LC_MESSAGES        | en_US.UTF-8
+ LC_MONETARY        | C
+ LC_NUMERIC         | C
+ LC_TIME            | C
+ abc                | 1
+ def                | 2
+(15 rows)
+
+```
+
 ## Installation
 ### Platform (Tested)
 - Ubutnu Server 18.04 LTS
