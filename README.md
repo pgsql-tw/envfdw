@@ -56,6 +56,7 @@ CREATE FOREIGN TABLE envfdw ( var text, val text ) SERVER envfdw_srv;
 ```
 - 之後可以當作一般 Table 進行查詢。
 ```
+SELECT count(*) FROM envfdw; -- Count the table
 SELECT * FROM envfdw; -- List all environment variables
 INSERT INTO envfdw (var, val) VALUES ('abc', '1'), ('def', '2'); -- Add two new environment variables
 UPDATE envfdw SET val='3' WHERE var='abc'; -- Set a new value to specified environment variables
