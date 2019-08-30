@@ -19,7 +19,7 @@
 
 ### Install envFDW
 - 找到你環境中的 multicorn 路徑，本例為： /usr/lib/python3/dist-packages/multicorn
-- 複製檔案 "envfdw.py" 到該路徑下。
+- 複製檔案 "envFDW.py" 到該路徑下。
 - 用 symbolic link 也是可以的唷。
 
 ## Usages
