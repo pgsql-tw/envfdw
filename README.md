@@ -1,5 +1,5 @@
-# envfdw
-- envFDW 是一個 forign data wrapper，用於處理環境變數。
+# envFDW
+- envFDW 是一個 forign data wrapper，用於處理作業系統環境變數(OS user：postgres)。
 - 這些操作都只有在目前連線中有效，重新連線就會還原。
 - 作為 FDW 開發者的入門範例。
 
