@@ -29,17 +29,22 @@ postgres=# select * from envfdw;
 
 ## Installation
 ### Platform (Tested)
-- Ubutnu Server 18.04 LTS
-- PostgreSQL 11
+- Ubutnu Server 18.04 LTS, 20.04 LTS
+- PostgreSQL 11, 12
    - Add PostgreSQL repository: https://www.postgresql.org/download/linux/ubuntu/
 - Multicorn 1.3.4
    - https://multicorn.org/
-- Python 3.6
+- Python 3.6, 3.8.2
 
 ### Install PostgreSQL and Multicorn
 ```
 # apt-get install postgresql-11 postgresql-11-python3-multicorn
 ```
+OR
+```
+# apt-get install postgresql-12 postgresql-12-python3-multicorn
+```
+
 
 ### Install envFDW
 - 找到你環境中的 multicorn 路徑，本例為： /usr/lib/python3/dist-packages/multicorn
